@@ -13,7 +13,7 @@ function Dashboard() {
   },[])
   const getUserData = async()=>{
     try{
-      const response = await axios.get("http://localhost:5000/api/get-userdata/",{
+      const response = await axios.get("https://repo-backend-3v9l.onrender.com/api/get-userdata/",{
         headers:{
           'Content-Type':'application/json',
           'Authorization':`Bearer ${token}`
@@ -28,7 +28,7 @@ function Dashboard() {
  
   const handleDelete = async(id) => {
     try{
-      const response = await axios.delete(`http://localhost:5000/api/delete-user/${id}`,{
+      const response = await axios.delete(`https://repo-backend-3v9l.onrender.com/api/delete-user/${id}`,{
          headers:{
           'Content-Type':'application/json',
           'Authorization':`Bearer ${token}`

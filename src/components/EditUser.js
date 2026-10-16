@@ -23,7 +23,7 @@ function EditUser() {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/get-singleuser/${id}`,{
+          `https://repo-backend-3v9l.onrender.com/api/get-singleuser/${id}`,{
           headers:{
           'Content-Type':'application/json',
           'Authorization':`Bearer ${token}`
@@ -111,7 +111,7 @@ function EditUser() {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/update-user/${id}`,
+        `https://repo-backend-3v9l.onrender.com/api/update-user/${id}`,
         formData,{
            headers:{
           'Content-Type':'application/json',
